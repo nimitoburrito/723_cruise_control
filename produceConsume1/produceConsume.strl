@@ -170,7 +170,7 @@ constant PedalsMin = 3.0f : float;
             pause;
 
             if ?CruiseState_internal <> 1 then
-                if ?CruiseState_internal = 2 and pre(?CruiseState_internal) <> 2 then 
+                if ?CruiseState_internal = 2 and pre(?CruiseState_internal) = 1 then 
 
                     temp_speed := ?Speed_internal;
                 end if;
