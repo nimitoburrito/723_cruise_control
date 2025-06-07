@@ -59,6 +59,8 @@ cd src
 
 Compile the simulation binary:
 
+make clean (optional but might fix any issues)
+
 make cruisecontrol.xes
 
 Execute the simulator:
