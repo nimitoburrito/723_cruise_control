@@ -67,21 +67,3 @@ Execute the simulator:
 
 ./cruisecontrol.xes
 
-
-## Inputs
-Name	Type	Description
-On	boolean	Enables the cruise control system
-Off	boolean	Turns the cruise control system off
-Resume	boolean	Resumes the last stored cruise speed
-Set	boolean	Stores current speed as the cruise speed
-QuickDecel	boolean	Decreases cruise speed by a fixed amount
-QuickAccel	boolean	Increases cruise speed by a fixed amount
-Accel	float	Driver's accelerator input
-Brake	float	Driver's brake input
-Speed	float	The current speed of the vehicle
- 
-## Outputs
-Name	Type	Description
-CruiseSpeed	float	The target speed maintained by the cruise system
-ThrottleCmd	float	The throttle signal to be sent to the car's engine system
-CruiseState	integer	Integer code representing the cruise control state
