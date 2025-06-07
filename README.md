@@ -1,8 +1,8 @@
 # 723_cruise_control
 A Cruise Control system implemented in Esterel, compiled to C, and executed using the XES simulator. Designed for educational use, this project includes modular state management and simulation of vehicle control logic.
 
-📋 Prerequisites
-Recommended Tools (for VSCode)
+## Prerequisites
+## Recommended Tools (for VSCode)
 Install the following extensions to improve your development experience:
 
 C/C++ extension (ms-vscode.cpptools)
@@ -19,7 +19,7 @@ export PATH=$PATH:/opt/esterelv6_01/bin
 
 Note: Avoid compiling from a mounted virtual disk such as tsclient. Instead, copy your project files to the VM's local disk for stable compilation.
 
-💻 Option 2: Local Installation (Without FlexIT)
+## Option 2: Local Installation (Without FlexIT)
 Check if Esterel tools are available:
 
 esterel -version
@@ -52,7 +52,7 @@ Install 32-bit development headers: sudo apt install libc6-dev-i386
 
 Install 32-bit X11 development libraries: sudo apt install libx11-dev:i386
 
-▶️ Running the Simulator
+## Running the Simulator
 Navigate to the src directory:
 
 cd src
@@ -66,7 +66,7 @@ Execute the simulator:
 ./cruisecontrol.xes
 
 
-⌨️ Inputs
+## Inputs
 Name	Type	Description
 On	boolean	Enables the cruise control system
 Off	boolean	Turns the cruise control system off
@@ -77,8 +77,8 @@ QuickAccel	boolean	Increases cruise speed by a fixed amount
 Accel	float	Driver's accelerator input
 Brake	float	Driver's brake input
 Speed	float	The current speed of the vehicle
-
-📤 Outputs
+ 
+## Outputs
 Name	Type	Description
 CruiseSpeed	float	The target speed maintained by the cruise system
 ThrottleCmd	float	The throttle signal to be sent to the car's engine system
